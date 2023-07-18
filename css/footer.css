@@ -114,6 +114,9 @@
   .footer-links a::after {
     display: none;
   }
+  .footer-container {
+    gap: 100px;
+  }
 }
 
 @media (max-width: 800px) {

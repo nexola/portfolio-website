@@ -151,6 +151,9 @@
   .formacao .subtitulo {
     font-size: 6rem;
   }
+  .formacao-container {
+    gap: 100px;
+  }
 }
 
 @media (max-width: 800px) {
