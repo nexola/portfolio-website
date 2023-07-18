@@ -60,6 +60,18 @@
   font-weight: bold;
 }
 
+.projeto-titulo a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.projeto-titulo a:hover {
+  text-decoration: underline;
+  transition: 300ms ease-in-out;
+}
+
 .projeto-texto {
   font-size: 0.875rem;
   color: #525252;
