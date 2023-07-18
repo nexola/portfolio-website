@@ -1,0 +1,151 @@
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 40px 60px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.footer-container .subtitulo {
+  color: #131312;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #838483;
+}
+
+.footer-texto strong {
+  color: #dcdcdc;
+}
+
+.footer-contato {
+  position: relative;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer-contato li::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+}
+
+.footer-contato .email::before {
+  background: url(../Imagens/email.svg);
+}
+
+.footer-contato .telefone::before {
+  background: url(../Imagens/telefone.svg);
+}
+
+.footer-contato .social::before {
+  background: url(../Imagens/instagram.svg);
+}
+
+.footer-contato a {
+  color: #fff;
+}
+
+.footer-contato a:hover {
+  color: #ccc;
+  transition: 100ms ease-in-out;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer-links a {
+  padding: 10px 20px;
+  padding-right: 70px;
+  color: #3b3b1b;
+  background: #f5d234;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #573f00;
+}
+
+.footer-links a:hover {
+  background: #c19e01;
+  transition: 200ms ease-in-out;
+}
+
+.footer-links a::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../Imagens/nova_aba.svg);
+  position: absolute;
+  margin-left: 13px;
+}
+
+@media (max-width: 1025px) {
+  .footer .subtitulo {
+    font-size: 6rem;
+  }
+  .footer-links a {
+    padding-right: 20px;
+  }
+  .footer-links a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  .footer-container .subtitulo {
+    text-transform: capitalize;
+    color: #dcdcdc;
+    word-break: keep-all;
+    font-size: 3rem;
+  }
+  .footer-contato li::before {
+    display: none;
+  }
+  .footer-texto {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-texto {
+    max-width: 25ch;
+  }
+
+  .footer-contato li {
+    font-size: 1.6rem;
+  }
+
+  .footer-links a {
+    font-size: 1.6rem;
+  }
+}
