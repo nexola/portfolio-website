@@ -72,12 +72,13 @@
 
 .footer-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   margin-top: 50px;
   position: relative;
 }
 
-.footer-links a {
+.footer-links a,
+.cv a {
   padding: 10px 20px;
   padding-right: 70px;
   color: #3b3b1b;
@@ -90,18 +91,36 @@
   border: 2px solid #573f00;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.cv a:hover {
   background: #c19e01;
   transition: 200ms ease-in-out;
 }
 
-.footer-links a::after {
+.footer-links a::after,
+.cv a::after {
   content: "";
+  position: absolute;
+  margin-left: 13px;
+}
+
+.footer-links a::after {
   width: 40px;
   height: 40px;
   background: url(../Imagens/nova_aba.svg);
-  position: absolute;
-  margin-left: 13px;
+}
+
+.cv a::after {
+  width: 45px;
+  height: 45px;
+  background: url(../Imagens/download.svg);
+  top: -5px;
+}
+
+.cv {
+  display: block;
+  margin-top: 46px;
+  position: relative;
 }
 
 @media (max-width: 1025px) {
@@ -148,7 +167,8 @@
     font-size: 1.6rem;
   }
 
-  .footer-links a {
+  .footer-links a,
+  .cv a {
     font-size: 1.6rem;
   }
 }
