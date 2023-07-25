@@ -59,6 +59,9 @@
 
 .footer-contato .social::before {
   background: url(../Imagens/instagram.svg);
+  width: 35px;
+  height: 35px;
+  left: -57px;
 }
 
 .footer-contato a {
