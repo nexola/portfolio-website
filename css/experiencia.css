@@ -93,6 +93,26 @@
   padding: 5px 10px;
 }
 
+.projeto-habilidades .link {
+  background: #525252;
+}
+
+.projeto-habilidades .link:hover {
+  background: #141414;
+  transition: 0.3s ease-in-out;
+}
+
+.projeto-habilidades .link a {
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
+  color: #fff;
+}
+
+.projeto-habilidades .link img {
+  width: 12px;
+}
+
 @media (max-width: 1025px) {
   .experiencia {
     gap: 100px;
