@@ -62,13 +62,21 @@
 
 .projeto-titulo a {
   display: flex;
-  gap: 10px;
+  gap: 4px;
   text-decoration: none;
   color: #000;
 }
 
+.projeto-titulo a::after {
+  content: "🡽";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 .projeto-titulo a:hover {
-  text-decoration: underline;
+  transform: translateX(12px);
+  color: #525252;
   transition: 300ms ease-in-out;
 }
 

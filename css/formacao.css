@@ -97,7 +97,8 @@
   color: #a3a3a3;
 }
 
-.cursos {
+.cursos,
+.idiomas {
   margin-bottom: 60px;
 }
 
@@ -127,6 +128,10 @@
   background: url(../Imagens/Idiomas.svg);
 }
 
+.certificados h3::before {
+  background: url(../Imagens/certificado.svg);
+}
+
 .formacao-extra li {
   font-size: 1.125rem;
   line-height: 1.1;
@@ -137,14 +142,31 @@
   color: #8f8f8f;
 }
 
-.cursos li {
+.cursos li,
+.certificados li,
+.idiomas li {
   display: flex;
   justify-content: space-between;
 }
 
-.idiomas li {
-  display: flex;
-  justify-content: space-between;
+.certificados li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #daa00c;
+}
+
+.certificados li a::after {
+  content: "🡽";
+  display: inline-block;
+  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.certificados li a:hover {
+  color: #fad638;
+  transform: translateX(12px);
+  transition: 300ms ease-in-out;
 }
 
 @media (max-width: 1025px) {
